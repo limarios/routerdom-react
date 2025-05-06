@@ -1,9 +1,7 @@
-import styles from './Menu.module.css'
 import MenuLink from '../MenuLink';
+import styles from './Menu.module.css';
 
 export default function Menu() {
-    
-
     return (
         <header>
             <nav className={styles.navegacao}>
@@ -17,4 +15,3 @@ export default function Menu() {
         </header>
     )
 }
-

@@ -1,17 +1,16 @@
-import styles from './Inicio.module.css'
-import Post from 'componentes/PostCard'
+import styles from './Inicio.module.css';
 
-import posts from 'json/posts.json'
+import posts from 'json/posts.json';
+import PostCard from "componentes/PostCard";
 
-export default function Index(){
+export default function Inicio() {
     return (
         <ul className={styles.posts}>
-            {posts.map( (post) => (
+            {posts.map((post) => (
                 <li key={post.id}>
-                    <Post post={post} />
+                    <PostCard post={post} />
                 </li>
-            ) )}
+            ))}
         </ul>
-        
     )
 }
